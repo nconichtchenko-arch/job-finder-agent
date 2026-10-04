@@ -1,0 +1,38 @@
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Переменные окружения с секретами
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Логи
+*.log
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Локальные данные
+*.db
+*.sqlite3
