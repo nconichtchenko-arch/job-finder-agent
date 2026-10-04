@@ -179,7 +179,7 @@ CREATE TABLE pavel_onichtchenko.filtered_vacancies (
 
 ...
 📁 Структура репозитория
-
+```
 job-finder-agent/
 │
 ├── README.md              # Этот файл
@@ -192,6 +192,7 @@ job-finder-agent/
 │   └── final_report.md    # Технический отчёт о проекте
 │
 └── data/                  # Папка для локальных данных
+```
 💡 Планы по развитию
 □ Telegram-уведомления о новых вакансиях
 □ Генерация сопроводительных писем через LLM (YandexGPT / OpenAI)
