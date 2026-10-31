@@ -1,4 +1,4 @@
-# Job Finder Agent <img src="logo.png" alt="Logo" width="150"/>
+# Job Finder Agent 
 
 Автоматизированный агент для поиска вакансий на **hh.ru** и **Хабр Карьере** с фильтрацией по релевантности и сохранением в PostgreSQL.
 
