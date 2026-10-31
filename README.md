@@ -25,24 +25,15 @@
 
 ## Архитектура
 
-Схема работы агента:
-
-**hh.ru (HTML)**  ->  **Хабр Карьера (API)**
-
-        |                         |
-        | requests + BeautifulSoup|
-        v                         v
-
-**job_agent.py**
-  - fetch_vacancies() (hh.ru)
-  - fetch_habr_vacancies() (Хабр)
-  - save_vacancies()
-  - filter_vacancies()
-  - show_top_vacancies()
-
-        |
-        | SQLAlchemy + psycopg2
-        v
+```mermaid
+graph TD
+    A[hh.ru HTML] -->|requests + BeautifulSoup| C(job_agent.py)
+    B[Хабр Карьера API] -->|requests| C
+    C -->|SQLAlchemy + psycopg2| D[(PostgreSQL)]
+    D --- E[vacancies]
+    D --- F[filtered_vacancies]
+    D --- G[applications]
+```
 
 **PostgreSQL**
   - vacancies
